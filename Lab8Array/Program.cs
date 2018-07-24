@@ -35,7 +35,7 @@ namespace Lab8Array
             classmates[18] = "Umbrella Stick";
             classmates[19] = "Zebadia Amish";
             string[] hometown = new string[] { "Washington DC", "Grand Rapids", "Portland", "Chicago", "Holland", "Fargo", "Jueno", "Talahassee", "Townsville", "Middle Earth", "Asheville", "Zionsville", "Portland", "the other Portland", "Detroit", "Marquette", "the South Side", "the North Pole", "Whoville", "where you're from." };
-            string[] talets = new string[] { "chewing bublegun", "taking names", "chashing checks", "hopscotch", "armed robery" };
+            string[] talents = new string[] { "chewing bublegun", "taking names", "chashing checks", "hopscotch", "armed robery", "playing hooky","throwing rocks at trains","absolutely nothing","running", "littering"};
 
             Console.WriteLine("As the new teacher in school it is wise to learn up on who you'll be teaching.");
             Console.WriteLine("Which student do you want to learn about? Enter a number 1-20");
@@ -45,6 +45,9 @@ namespace Lab8Array
             
                 Console.WriteLine("This is " + classmates[i]);
                 Console.ReadLine();
+            Console.WriteLine("They're from " + hometown[i]);
+            Console.WriteLine("They're good at " + talents[i/2]);
+            Console.ReadKey();
 
             
 
