@@ -1,0 +1,7 @@
+C:\Users\frees\source\repos\Lab8Array\Lab8Array\bin\Debug\Lab8Array.exe.config
+C:\Users\frees\source\repos\Lab8Array\Lab8Array\bin\Debug\Lab8Array.exe
+C:\Users\frees\source\repos\Lab8Array\Lab8Array\bin\Debug\Lab8Array.pdb
+C:\Users\frees\source\repos\Lab8Array\Lab8Array\obj\Debug\Lab8Array.csprojAssemblyReference.cache
+C:\Users\frees\source\repos\Lab8Array\Lab8Array\obj\Debug\Lab8Array.csproj.CoreCompileInputs.cache
+C:\Users\frees\source\repos\Lab8Array\Lab8Array\obj\Debug\Lab8Array.exe
+C:\Users\frees\source\repos\Lab8Array\Lab8Array\obj\Debug\Lab8Array.pdb
