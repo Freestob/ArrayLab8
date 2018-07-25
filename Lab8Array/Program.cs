@@ -23,7 +23,7 @@ namespace Lab8Array
             classmates[6] = "Charlie Humpkins";
             classmates[7] = "Delta Flyer";
             classmates[8] = "Eugine Elward";
-            classmates[9] = "Frank Loyde-Wright";
+            classmates[9] = "Frank Lloyde-Wright";
             classmates[10] = "George Peach";
             classmates[11] = "Henrieta Horseman";
             classmates[12] = "Juliete Runfar";
@@ -46,14 +46,37 @@ namespace Lab8Array
             Console.WriteLine("This is " + classmates[i]);
             Console.WriteLine("Would you like to know more about their hometown or talents?");
             var userChoice = Console.ReadLine();
-            if(userChoice == "hometown")
+
+            if (userChoice == "hometown")
             {
                 Console.WriteLine(classmates[i] + " is from " + hometown[i]);
+                Console.WriteLine("Would you like to know about their talents? (y/n)");
+                if (Console.ReadLine().ToLower() == "y")
+                {
+                    Console.WriteLine(classmates[i] + " is good at " + talents[i]);
+                    Console.ReadKey();
+                    return;
+                }
+            }
+            else if (userChoice == "talents")
+            {
+                Console.WriteLine(classmates[i] + "is good at " + talents[i]);
+                Console.WriteLine("Would you like to know about their hometown? (y/n)");
+                if (Console.ReadLine().ToLower() == "y")
+                {
+                    Console.WriteLine(classmates[i] + " is from " + hometown[i]);
+                    Console.ReadKey();
+                    return;
+                }
+            }
+            else
+            {
+                Console.WriteLine("That is not a valid answer");
             }
             
             
-            Console.WriteLine("They're from " + hometown[i]);
-            Console.WriteLine("They're good at " + talents[i/2]);
+            
+       
             Console.ReadKey();
 
             
