@@ -41,8 +41,18 @@ namespace Lab8Array
             Console.WriteLine("Which student do you want to learn about? Enter a number 1-20");
             
             int userInput = int.Parse(Console.ReadLine());
-            int i = userInput - 1;
             
+
+            int i = userInput - 1;
+
+            if (i < 22)
+            {
+                Console.WriteLine("That number is too high");
+                throw new IndexOutOfRangeException();
+
+            }
+
+
             Console.WriteLine("This is " + classmates[i]);
             Console.WriteLine("Would you like to know more about their hometown or talents?");
             var userChoice = Console.ReadLine();
@@ -53,14 +63,16 @@ namespace Lab8Array
                 Console.WriteLine("Would you like to know about their talents? (y/n)");
                 if (Console.ReadLine().ToLower() == "y")
                 {
-                    Console.WriteLine(classmates[i] + " is good at " + talents[i]);
+                    int y = i / 2;
+                    Console.WriteLine(classmates[i] + " is good at " + talents[y]);
                     Console.ReadKey();
                     return;
                 }
             }
             else if (userChoice == "talents")
             {
-                Console.WriteLine(classmates[i] + "is good at " + talents[i]);
+                int y = i / 2;
+                Console.WriteLine(classmates[i] + "is good at " + talents[y]);
                 Console.WriteLine("Would you like to know about their hometown? (y/n)");
                 if (Console.ReadLine().ToLower() == "y")
                 {
